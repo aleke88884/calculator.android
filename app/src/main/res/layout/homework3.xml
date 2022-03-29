@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/person" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/silver" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageView2"
+        android:text="Aleke"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/third"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textView11"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/imageView2">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView3"
+            android:text="200 store" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/imageView3"
+            app:srcCompat="@drawable/openbook" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView3"
+            android:layout_toRightOf="@id/imageView5"
+            android:text="15 pages" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fourth"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textView11"
+        android:layout_toRightOf="@id/third">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_book_24" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView6"
+            android:text="95 books" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView14"
+            android:layout_marginTop="5dp"
+
+            app:srcCompat="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView14"
+            android:layout_toRightOf="@id/imageView7"
+            android:text="today"
+            android:layout_marginTop="5dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

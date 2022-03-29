@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/calc_homew_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="226"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calc_homew_text"
+        android:layout_marginTop="50dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            style="@style/space_between_calc_btns"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btn_home_del"
+                style="@style/calc_home_btn_first"
+                android:text="DEL"
+
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_home_equals"
+                style="@style/calc_home_btn_first"
+                android:text="="
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/space_between_calc_btns">
+
+            <Button
+                android:id="@+id/btn_home_1"
+                style="@style/btn_calc_first"
+                android:text="1"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_home_2"
+                style="@style/btn_calc_first"
+                android:text="2"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_h_3"
+                style="@style/btn_calc_first"
+                android:text="3"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_h_delete"
+                style="@style/text_color_softgreen"
+                android:text="/"
+                tools:ignore="TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            style="@style/space_between_calc_btns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btn_h_4"
+                style="@style/btn_calc_first"
+                android:text="4"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+            <Button
+                android:id="@+id/btn_h_5"
+                style="@style/btn_calc_first"
+                android:text="5"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+            <Button
+                android:id="@+id/btn_h_6"
+                style="@style/btn_calc_first"
+                android:text="6"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+            <Button
+                android:id="@+id/btn_h_mines"
+                style="@style/text_color_softgreen"
+                android:text="-"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            style="@style/space_between_calc_btns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btn_h_7"
+                style="@style/btn_calc_first"
+                android:text="7"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+            <Button
+                android:id="@+id/btn_h_8"
+                style="@style/btn_calc_first"
+                android:text="8"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+            <Button
+                android:id="@+id/btn_h_9"
+                style="@style/btn_calc_first"
+                android:text="9"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+            <Button
+                android:id="@+id/btn_h_X"
+                style="@style/text_color_softgreen"
+                android:text="X"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            style="@style/space_between_calc_btns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btn_h_dot"
+                style="@style/btn_calc_first"
+                android:text="."
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_h_0"
+                style="@style/btn_calc_first"
+                android:text="0"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+            <Button
+                android:id="@+id/btn_h_percent"
+                style="@style/text_color_softgreen"
+                android:text="%"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+            <Button
+                android:id="@+id/btn_h_plus"
+                style="@style/text_color_softgreen"
+                android:text="+"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="btn_calc_first" >
+    <item name="android:layout_margin">5dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:background">@drawable/btn_calc_anim_click</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_color_softblue" parent="btn_calc_first">
+        <item name="android:background">@drawable/btn_func_anim_calc</item>
+    </style>
+    <style name="text_color_softgreen" parent="btn_calc_first">
+        <item name="android:background">#11FF00</item>
+    </style>
+
+    <style name="calc_home_btn_first">
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@color/teal_200</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="space_between_calc_btns">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+</resources>

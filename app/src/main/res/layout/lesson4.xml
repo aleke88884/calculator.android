@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/calc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:text="0"
+        android:textSize="40dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calc_text"
+        android:layout_marginTop="60dp"
+        >
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_C"
+                style="@style/text_color_softblue"
+
+                android:text="C"
+
+                 />
+
+            <Button
+                android:id="@+id/btn_plusormines"
+
+                android:layout_margin="5dp"
+                android:text="+/-"
+                style="@style/text_color_softblue"/>
+
+            <Button
+                android:id="@+id/btn_percent"
+
+                android:layout_margin="5dp"
+                android:text="%"
+                style="@style/text_color_softblue"/>
+
+            <Button
+                android:id="@+id/divide"
+
+                android:layout_margin="5dp"
+                android:text="/"
+                style="@style/text_color_softblue"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <Button
+                android:id="@+id/btn_7"
+
+                android:text="7"
+                style="@style/btn_calc_first"/>
+            <Button
+                android:id="@+id/btn_8"
+
+                android:text="8"
+                style="@style/btn_calc_first"/>
+            <Button
+                android:id="@+id/btn_9"
+
+                android:text="9"
+                style="@style/btn_calc_first"/>
+            <Button
+                android:id="@+id/btn_X"
+
+                android:text="X"
+
+                style="@style/text_color_softblue"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <Button
+                android:id="@+id/btn_4"
+
+                android:text="4"
+                style="@style/btn_calc_first"/>
+
+            <Button
+                android:id="@+id/btn_5"
+
+                android:text="5"
+                style="@style/btn_calc_first"/>
+
+            <Button
+                android:id="@+id/btn_6"
+
+                android:text="6"
+                style="@style/btn_calc_first"/>
+
+            <Button
+                android:id="@+id/btn_mines"
+
+                android:text="-"
+                style="@style/text_color_softblue"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_1"
+
+                android:text="1"
+                style="@style/btn_calc_first"/>
+
+            <Button
+                android:id="@+id/btn_2"
+
+                android:text="2"
+                style="@style/btn_calc_first"/>
+
+            <Button
+                android:id="@+id/btn_3"
+
+                android:text="3"
+                style="@style/btn_calc_first"/>
+
+            <Button
+                android:id="@+id/btn_plus"
+
+                android:text="+"
+                style="@style/text_color_softblue"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_0"
+
+                android:text="0"
+                style="@style/btn_calc_first"/>
+
+            <Button
+                android:id="@+id/btn_dot"
+
+                android:text="."
+                style="@style/btn_calc_first"/>
+
+
+            <Button
+                android:id="@+id/btn_space"
+
+                android:text=""
+                style="@style/btn_calc_first"/>
+
+            <Button
+                android:id="@+id/btn_equal"
+
+                android:text="="
+                style="@style/text_color_softblue"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
