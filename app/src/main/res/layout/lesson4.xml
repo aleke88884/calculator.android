@@ -171,9 +171,9 @@
 
 
             <Button
-                android:id="@+id/btn_space"
+                android:id="@+id/btn_delete"
 
-                android:text=""
+                android:text="DEL"
                 style="@style/btn_calc_first"/>
 
             <Button
