@@ -22,6 +22,14 @@
     <style name="text_color_softblue" parent="btn_calc_first">
         <item name="android:background">@drawable/btn_func_anim_calc</item>
     </style>
+    <style name="text_color_softblue_func_land" parent="btn_calc_first">
+        <item name="android:background">@drawable/btn_func_anim_calc</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_color_softblue_land" parent="btn_calc_first">
+        <item name="android:textSize">15sp</item>
+    </style>
     <style name="text_color_softgreen" parent="btn_calc_first">
         <item name="android:background">#11FF00</item>
     </style>
@@ -36,7 +44,55 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="space_between_calc_btns">
+    <style name="space_between_calc_btns" >
         <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
+    <style name="table" >
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/calc_text</item>
+
+    </style>
+    <style name="table_land" parent="table" >
+        <item name="android:layout_marginTop">5dp</item>
+
+    </style>
+    <style name="space_between_calc_btns_land" parent="space_between_calc_btns" >
+        <item name="android:layout_marginTop">0dp</item>
+
+    </style>
+    <style name="textView_calc"  >
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">0</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="textView_calc_land"  parent="textView_calc">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:text">0</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="textView_calc_text"  >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">0</item>
+        <item name="android:layout_below">@id/zapis</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="textView_calc_text_land"  parent="textView_calc_text">
+        <item name="android:text">0</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+
 </resources>
