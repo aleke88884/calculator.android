@@ -144,29 +144,33 @@
             style="space_between_calc_btns_land">
 
             <Button
-                android:id="@+id/text_color_softblue_land"
+                android:id="@+id/btn_0"
 
+                style="@style/btn_calc_first"
                 android:text="0"
-                style="@style/btn_calc_first"/>
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/btn_dot"
 
+                style="@style/btn_calc_first"
                 android:text="."
-                style="@style/btn_calc_first"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
 
             <Button
                 android:id="@+id/btn_delete"
 
+                style="@style/text_color_softblue_land"
                 android:text="DEL"
-                style="@style/text_color_softblue_land"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/btn_equal"
 
+                style="@style/text_color_softblue_func_land"
                 android:text="="
-                style="@style/text_color_softblue_func_land"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
         </TableRow>
 

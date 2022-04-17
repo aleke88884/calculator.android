@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_7,btn_8 , btn_9, btn_6, btn_5 , btn_4 , btn_3, btn_2 , btn_1 , btn_0, btn_delete,btn_equal,btn_C,btn_plusormines,btn_plus,btn_mines, btn_multiply,
-            btn_percent, btn_divide;
+            btn_percent, btn_divide,btn_dot;
     TextView calc_text,zapis;
     String znak,birinshisan,zapisText, ekinshisan;
     @Override
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btn_0 = findViewById(R.id.btn_0);
         btn_7 = findViewById(R.id.btn_7);
         btn_delete = findViewById(R.id.btn_delete);
+        btn_dot = findViewById(R.id.btn_dot);
         btn_C = findViewById(R.id.btn_C);
         btn_plusormines = findViewById(R.id.btn_plusormines);
         btn_percent = findViewById(R.id.btn_percent);
@@ -83,6 +85,15 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.btn_9:
                         basilganSan="9";
                         break;
+                    case R.id.btn_dot:
+
+                        if(aldingiSan.contains(".")){
+                            basilganSan = "";
+                        }else{
+                            basilganSan=".";
+                        }
+
+                        break;
                     case R.id.btn_delete:
                         if(calc_text.length()>0) {
                             String deltxt = aldingiSan.substring(0, aldingiSan.length() - 1);
@@ -91,8 +102,10 @@ public class MainActivity extends AppCompatActivity {
                         }
                         break;
                 }
+
                 if(!aldingiSan.equals("0")) lastresult = aldingiSan + basilganSan;
                 else lastresult = basilganSan;
+
                 calc_text.setText(lastresult);
             }
 
@@ -110,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
         btn_1.setOnClickListener(buttonSandar);
         btn_0.setOnClickListener(buttonSandar);
         btn_7.setOnClickListener(buttonSandar);
+        btn_dot.setOnClickListener(buttonSandar);
+
     }
     public void deletePlusMinesMethods(){
         View.OnClickListener buttonremovePlusMines = new View.OnClickListener(){
@@ -156,6 +171,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.btn_multiply:
                         znak = "*";
                         break;
+
+                    case R.id.btn_percent:
+                        znak = "%";
+                        break;
+
+
                 }
                 zapisText = birinshisan + znak;
                 zapis.setText(zapisText);
@@ -166,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
         btn_mines.setOnClickListener(btnFunction);
         btn_multiply.setOnClickListener(btnFunction);
         btn_divide.setOnClickListener(btnFunction);
+        btn_percent.setOnClickListener(btnFunction);
 
 
 
@@ -173,19 +195,44 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 ekinshisan = calc_text.getText().toString();
-                int san1 = Integer.parseInt(birinshisan);
-                int san2 = Integer.parseInt(ekinshisan);
-                int result=0;
-                if(znak.equals("+")){
-                    result = san1+san2;
+                double result=0;
+                if(zapisText.contains(".")){
+                    double san1 = Double.parseDouble(birinshisan);
+                    double san2 = Double.parseDouble(ekinshisan);
+
+                    if(znak.equals("+")){
+                        result = san1+san2;
+                    }
+                    else if(znak.equals("-")){
+                        result = san1-san2;
+                    }else if(znak.equals("*")){
+                        result = san1*san2;
+                    }else if(znak.equals("/")){
+                        result = san1/san2;
+                    }else if(znak.equals("%")){
+                        result = san1%san2;
+                    }
+                }else{
+                    int san1 = Integer.parseInt(birinshisan);
+                    int san2 = Integer.parseInt(ekinshisan);
+
+                    if(znak.equals("+")){
+                        result = san1+san2;
+                    }
+                    else if(znak.equals("-")){
+                        result = san1-san2;
+                    }else if(znak.equals("*")){
+                        result = san1*san2;
+                    }else if(znak.equals("/")){
+                        result = san1/san2;
+                    }else if(znak.equals("%")){
+                        result = san1%san2;
+                    }
                 }
-                else if(znak.equals("-")){
-                    result = san1-san2;
-                }else if(znak.equals("*")){
-                    result = san1*san2;
-                }else if(znak.equals("/")){
-                    result = san1/san2;
-                }
+
+
+
+
                 zapisText = birinshisan + znak + ekinshisan+ " = "+result;
                 zapis.setText(zapisText);
                 calc_text.setText(""+result);
